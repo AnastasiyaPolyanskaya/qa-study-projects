@@ -1,0 +1,28 @@
+# Задача 5 - Мини-калькулятор из четырёх операций
+
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b
+
+
+def multiply(a, b):
+    return a * b
+
+
+def divide(a, b):
+    if b == 0:
+        return "Ошибка: деление на ноль"
+    return a / b
+
+
+x = 20
+y = 4
+
+print("Числа:", x, "и", y)
+print("Сложение:", add(x, y))
+print("Вычитание:", subtract(x, y))
+print("Умножение:", multiply(x, y))
+print("Деление:", divide(x, y))
