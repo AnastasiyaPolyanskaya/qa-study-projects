@@ -1,0 +1,19 @@
+# Задача 5 - Напишите код, который на входе принимает список с числами, через пробел.
+Выведите на печать второе по величине число в списке, используя оператор break.
+
+numbers = list(map(int, input().split()))
+
+first = max(numbers)
+second = min(numbers)  
+
+for num in numbers:
+    if num == first:
+        continue
+    if num > second:
+        second = num
+        
+found = False
+for num in numbers:
+    if num == second:
+        print(num)
+        break
